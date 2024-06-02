@@ -3,6 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   routeRules: {
     '/': { static: true },
-    '/blog': { isr: 30000 },
-  }
+    '/blog': { isr: 10 },
+  },
 })
