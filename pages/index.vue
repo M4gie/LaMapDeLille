@@ -24,7 +24,10 @@ onMounted(() => {
       layers: layers("protomaps", "light")
     },
     center: [3.058999, 50.632043],
-    zoom: 13
+    zoom: 13,
+    minZoom: 13,
+    dragRotate: false,
+    maxBounds: [[2.987243,50.604817], [3.139948,50.668033]],
   })
 
   map.addControl(
