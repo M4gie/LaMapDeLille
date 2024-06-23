@@ -5,4 +5,13 @@ export default defineNuxtConfig({
     '/': { static: true },
     '/blog': { isr: 10 },
   },
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  eslint: {
+    config: {
+      stylistic: true,
+      typescript: {
+        strict: true,
+      },
+    },
+  },
 })

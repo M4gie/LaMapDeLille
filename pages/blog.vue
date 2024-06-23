@@ -4,7 +4,7 @@ const { data } = await useFetch('https://catfact.ninja/fact')
 
 <template>
   <div>
-      <pre>Time after hydration: {{ new Date().toUTCString() }} </pre>
-      <pre>Time in server rendered HTML: {{ data }}</pre>
+    <pre>Time after hydration: {{ new Date().toUTCString() }} </pre>
+    <pre>Time in server rendered HTML: {{ data }}</pre>
   </div>
 </template>
